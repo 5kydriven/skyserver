@@ -1,0 +1,16 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Dependencies and generated output
+node_modules/
+.next/
+.svelte-kit/
+dist/
+build/
+coverage/
+*.log
+.DS_Store
