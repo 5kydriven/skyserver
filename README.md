@@ -29,8 +29,13 @@ or pull, recreate the service to ensure the container sees the current file:
 docker compose -f compose.yml up -d --force-recreate landing
 ```
 
-The homelab checkout lives at `projects/skyserver`. Its legacy `landing` path is
-a compatibility symlink, so existing deployment references continue resolving.
+The homelab checkout and live bind mount use `projects/skyserver` directly.
+From the homelab root, deploy with:
+
+```sh
+docker compose -f projects/skyserver/compose.yml up -d
+```
+
 The independent repository must be cloned separately when restoring the homelab.
 
 ## Future admin dashboard
