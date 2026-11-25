@@ -18,6 +18,17 @@ npm run dev
 Open http://127.0.0.1:3000. Run `npm run build` to create a production build,
 then `npm run preview` to preview it locally.
 
+### VS Code
+
+Install the workspace's recommended extensions when prompted: Vue (Official),
+Prettier, and EditorConfig. Disable Vetur in this workspace if already installed.
+Vue (Official) provides Vue and TypeScript language support; Prettier formats
+Vue, JavaScript, TypeScript, and JSON files on save using `.prettierrc.json`.
+EditorConfig standardizes indentation and line endings across editors.
+
+Use **Terminal > Run Task** for the Nuxt dev, build, and preview commands.
+These commands require the compatible Node version described above.
+
 ## Existing landing page
 
 A static HTML service directory served by Nginx. The page has no application-level
