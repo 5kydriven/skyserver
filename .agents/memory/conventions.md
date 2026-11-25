@@ -5,6 +5,8 @@ updated: 2026-11-25T05:21:01+00:00
 # Skyserver Conventions `[TAG:CONVENTIONS]`
 
 - Nuxt 4.7.0, Vue 3, TypeScript; one app under `app/`, no Nuxt layers.
+- Approved [architecture baseline](../../.agent-work/architecture/readable-nuxt/ARCHITECTURE_PLAN.md): read page code top to bottom; keep local logic inline where clear and use short descriptive names. Extract meaningful shared behavior, substantial UI, and security boundaries while following Nuxt practices.
+- Architecture may evolve with demonstrated requirements or evidence. Explain material changes and migration scope, update affected guidance, and avoid speculative abstractions or unrelated rewrites.
 - `app/app.vue` currently renders `NuxtWelcome`; dashboard routes and auth are future work.
 - Keep `index.html` public. `compose.yml` still deploys Nginx; Nuxt is not deployed by that service.
 - Preserve Compose project `landing`, container `homelab-landing`, and external network `npm_default` unless deployment work explicitly changes them.

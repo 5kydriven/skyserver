@@ -25,6 +25,7 @@ No application services or database models are implemented.
 ## 3. Invariant Rules for Nuxt dashboard
 
 - Preserve the one-app decision; introduce layers only for a demonstrated reuse or scale requirement.
+- The approved readability-first architecture is an evolving baseline. Prefer page-local flow and simple names; revisit boundaries when justified by actual needs, keeping Nuxt best practices and guidance aligned.
 - Future public and admin screens may use separate layouts within the same app; these layouts are planned, not implemented.
 - Keep credentials server-side and implement authorization on protected operations when adding them.
 - Nuxt 4.7.0 and the lockfile are installed; the current build uses the default Nitro setup.
