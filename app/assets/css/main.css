@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+@import '@nuxt/ui';
+
+@theme {
+  --font-sans: system-ui, sans-serif;
+}
+
+body {
+  background: radial-gradient(
+    circle at top,
+    #0f2b3a,
+    var(--color-slate-950) 55%
+  );
+}

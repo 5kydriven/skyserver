@@ -1,0 +1,17 @@
+.git
+.agents
+.agent-work
+.codex
+.vscode
+node_modules
+.nuxt
+.output
+.data
+dist
+build
+coverage
+.env
+.env.*
+*.key
+*.pem
+*.log
