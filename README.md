@@ -2,7 +2,23 @@
 
 Landing page for the SKYSERVER homelab at https://skydriven.xyz.
 
-## Current application
+## Nuxt development
+
+The repository includes a minimal Nuxt 4.7.0 starter. Dashboard structure and
+landing-page migration will follow separately; Docker Compose still serves the
+existing `index.html` through Nginx.
+
+Use Node.js `^22.22.3`, `^24.15.0`, or `>=26.0.0` (Node 24 LTS recommended).
+
+```sh
+npm install
+npm run dev
+```
+
+Open http://127.0.0.1:3000. Run `npm run build` to create a production build,
+then `npm run preview` to preview it locally.
+
+## Existing landing page
 
 A static HTML service directory served by Nginx. The page has no application-level
 login or session handling. Each linked service enforces its own access policy.
